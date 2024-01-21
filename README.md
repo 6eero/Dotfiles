@@ -2,7 +2,7 @@
 
 ![#000000](https://placehold.co/15x15/000000/000000.png)![#ffffff](https://placehold.co/15x15/ffffff/ffffff.png)![#5eadfc](https://placehold.co/15x15/5eadfc/5eadfc.png)![#00fbad](https://placehold.co/15x15/00fbad/00fbad.png)![#fa5ead](https://placehold.co/15x15/fa5ead/fa5ead.png)![#ffdf5f](https://placehold.co/15x15/ffdf5f/ffdf5f.png) 
 
-![rice](https://user-images.githubusercontent.com/114809573/212997461-cecf420f-acc0-422b-8f37-e13090ebc1e3.jpg)
+![rice](https://github.com/6eero/dotfiles-2/assets/114809573/9093a98a-625f-4a95-b1a7-852a40972ba5)
 
 
 # Application And Utilites
