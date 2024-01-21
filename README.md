@@ -1,6 +1,6 @@
 # My Purple-Yellow-arch dotfiles
 
-![#0E0E18](https://placehold.co/15x15/0E0E18/0E0E18.png)`#0E0E18`![#ffffff](https://placehold.co/15x15/ffffff/ffffff.png) `#ffffff`![#957fb8](https://placehold.co/15x15/957fb8/957fb8.png) `#957fb8`![#4C3F47](https://placehold.co/15x15/4C3F47/4C3F47.png) `#4C3F47`![#a7987a](https://placehold.co/15x15/a7987a/a7987a.png) `#a7987a`![#54546d](https://placehold.co/15x15/54546d/54546d.png) `#54546d`![#90734E](https://placehold.co/15x15/90734E/90734E.png) `#90734E`![#D4A140](https://placehold.co/15x15/D4A140/D4A140.png) `#D4A140`![#F6C457](https://placehold.co/15x15/F6C457/F6C457.png) `#F6C457`
+![#0E0E18](https://placehold.co/15x15/0E0E18/0E0E18.png)![#ffffff](https://placehold.co/15x15/ffffff/ffffff.png)![#957fb8](https://placehold.co/15x15/957fb8/957fb8.png)![#4C3F47](https://placehold.co/15x15/4C3F47/4C3F47.png)![#a7987a](https://placehold.co/15x15/a7987a/a7987a.png)![#54546d](https://placehold.co/15x15/54546d/54546d.png)![#90734E](https://placehold.co/15x15/90734E/90734E.png)![#D4A140](https://placehold.co/15x15/D4A140/D4A140.png)![#F6C457](https://placehold.co/15x15/F6C457/F6C457.png)
 
 ![rice](https://github.com/6eero/dotfiles-2/assets/114809573/9093a98a-625f-4a95-b1a7-852a40972ba5)
 
