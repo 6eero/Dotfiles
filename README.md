@@ -17,7 +17,7 @@
 - Fetch Util - [Neofetch](https://github.com/dylanaraps/neofetch)
 
 # Color scheme
-- ![#0E0E18](https://placehold.co/15x15/0E0E18/0E0E18.png) `#0E0E18`
+- ![#000000](https://placehold.co/15x15/000000/000000.png) `#000000`
 - ![#ffffff](https://placehold.co/15x15/ffffff/ffffff.png) `#ffffff`
 - ![#5eadfc](https://placehold.co/15x15/5eadfc/5eadfc.png) `#5eadfc`
 - ![#00fbad](https://placehold.co/15x15/00fbad/00fbad.png) `#00fbad`
