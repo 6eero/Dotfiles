@@ -1,0 +1,31 @@
+#! /bin/sh
+
+# Start sxhkd
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# rotate screen
+xrandr --output HDMI-0 --rotate left
+xrandr --output HDMI-0 --left-of HDMI-1
+
+# Start nitrogen to set the wallpaper on the boot
+nitrogen --restore
+
+# start notification manager
+dunst &
+
+# start picom
+picom &
+
+# launch polybar
+./.config/polybar/launch.sh
+
+# Workspaces
+bspc monitor HDMI-1 -d '1' '2' '3' '4' '5' '6' '7' 
+bspc monitor HDMI-0 -d '1' 
+
+bspc config border_width         0
+bspc config window_gap          10
+
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true

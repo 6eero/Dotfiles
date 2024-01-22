@@ -1,0 +1,20 @@
+import = [ "~/.config/alacritty/colors.toml" ]
+
+[window.padding]
+x = 20
+y = 20
+
+[window]
+opacity = 1
+
+[cursor]
+style = "Underline"
+
+[font]
+size = 9.0
+
+[font.normal]
+family = "JetBrains Mono Nerd Font"
+
+[mouse]
+hide_when_typing = true
