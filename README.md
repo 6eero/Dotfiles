@@ -28,11 +28,11 @@
 - ![#F6C457](https://placehold.co/15x15/F6C457/F6C457.png) `#F6C457`
 
 # Manual Installation
-1.Clone this repository.
+1. Clone this repository.
 ```
 git clone https://github.com/6eero/dotfiles-2
 ```
-2.Just copy the piece of code you really want.
+2. Just copy the piece of code you really want.
 
 # ⚠️Note
 Please understand that this is my personal configuration for my setup. If something doesn't work, feel free to message me, and I will try to help. However, before doing that, make sure you read the error output, use some common sense, and try to solve the problem yourself if it is something simple.
