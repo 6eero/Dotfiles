@@ -15,6 +15,7 @@ size = 9.0
 
 [font.normal]
 family = "JetBrains Mono Nerd Font"
+# family = "SFMono"
 
 [mouse]
 hide_when_typing = true

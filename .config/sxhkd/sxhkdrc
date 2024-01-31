@@ -10,7 +10,7 @@ super + q
 super + w
 	./.config/bspwm/bspwmrc
 
-# refresh sxhkd212
+# refresh sxhkd
 super + Escape
 	pkill -USR1 -x sxhkd
 
@@ -22,6 +22,10 @@ super + s
 super + d
 	rofi -modi drun -show
 
+# start ranger file manager
+super + r
+	alacritty -e ranger
+
 # focus or send to the given desktop
 super + {_,shift + }{1-8}
 	bspc {desktop -f,node -d} '^{2-8}'
@@ -29,16 +33,3 @@ super + {_,shift + }{1-8}
 # alternate between the tiled and monocle layout (full screen)
 super + f
 	bspc desktop -l next
-
-
-#
-# move/resize
-#
-
-# expand a window by moving one of its side outward
-super + alt + {h,j,k,l}
-	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
-
-# contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
-	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
