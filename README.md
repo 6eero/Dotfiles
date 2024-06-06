@@ -24,6 +24,11 @@
 - ![#957fb8](https://placehold.co/15x15/957fb8/957fb8.png) `#957fb8`
 - ![#7E9CD8](https://placehold.co/15x15/7E9CD8/7E9CD8.png) `#7E9CD8`
 
+
+# 📷 Screenshots 
+![](https://github.com/6eero/Dotfiles/blob/main/Screenshots/3.png)
+![](https://github.com/6eero/Dotfiles/blob/main/Screenshots/2.png)
+
 # ⛏️ Manual Installation
 1. Clone this repository.
 ```
