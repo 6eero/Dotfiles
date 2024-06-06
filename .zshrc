@@ -18,3 +18,5 @@ alias tree="exa --icons --tree"
 alias ls="exa --icons"
 alias ll="exa --long --header --icons"
 alias la="exa --long --header --icons --all"
+
+[ -f "/home/gero/.ghcup/env" ] && . "/home/gero/.ghcup/env" # ghcup-env
