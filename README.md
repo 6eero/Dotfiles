@@ -1,4 +1,4 @@
-# My Purple-Yellow-arch dotfiles
+# My Arch dotfiles
 
 ![#101010](https://placehold.co/15x15/101010/101010.png)![#ffffff](https://placehold.co/15x15/ffffff/ffffff.png)![#957fb8](https://placehold.co/15x15/957fb8/957fb8.png)![#4C3F47](https://placehold.co/15x15/4C3F47/4C3F47.png)![#a7987a](https://placehold.co/15x15/a7987a/a7987a.png)![#E6B450](https://placehold.co/15x15/E6B450/E6B450.png)![#E6B673](https://placehold.co/15x15/E6B673/E6B673.png)![#7E9CD8](https://placehold.co/15x15/7E9CD8/7E9CD8.png)
 
