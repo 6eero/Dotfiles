@@ -1,0 +1,55 @@
+* {
+    bg:             #101010;
+    fg:             #505050;
+    selected:       #ffffff;
+    button:         #151515;
+
+    background-color: @bg;
+    text-color: @fg;
+}
+
+window {
+    transparency: "real";
+    border-radius: 0px;
+    width: 150px;
+    y-offset: 10px;
+    padding: 0px;
+    location: 0;
+}
+
+prompt { enabled: false; }
+
+listview {
+    columns: 1;
+    lines: 2;
+    cycle: true;
+    dynamic: true;
+    layout: vertical;
+}
+
+mainbox {
+    children: [ listview ];    
+    spacing: 2%;
+    padding: 1% 1% 1% 1%;
+}
+
+element {
+    orientation: vertical;
+    border-radius: 0%;
+    padding: 1% 0% 1% 0%;
+}
+
+element-text {
+    expand: true;
+    vertical-align: 0.5;
+    horizontal-align: 0.5; /* Aggiunta per centrare il testo orizzontalmente */
+    margin: 0% 0% 0% 0%;
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element selected {
+    background-color: @bg;
+    text-color: @selected;
+    border-radius: 0px;
+}

@@ -8,10 +8,10 @@ configuration {
 @theme "/dev/null"
 
 * {
-	bg:				#0b0e14;
-	fg:				#54546d;
-	selected: #ffffff;
-	button:		#12121c;
+	bg:				#101010;
+	fg:				#505050;
+	selected: 		#ffffff;
+	button:			#151515;
 
 	background-color: @bg;
 	text-color: @fg;

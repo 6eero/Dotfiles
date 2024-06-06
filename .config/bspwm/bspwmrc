@@ -14,7 +14,6 @@ nitrogen --restore
 dunst &
 
 # start picom
-picom &
 
 # launch polybar
 ./.config/polybar/launch.sh

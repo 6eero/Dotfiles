@@ -3,8 +3,11 @@ super + Return
 	alacritty
 
 # close focused window
+#super + q
+#	bspc node -{c,k}
+
 super + q
-	bspc node -{c,k}
+  ./Scripts/rofi-kill-window.sh
 
 # refresh bspwm config
 super + w
@@ -33,3 +36,11 @@ super + {_,shift + }{1-8}
 # switch from full screen to tiled mode
 super + {t,f}
 	bspc node -t {tiled,fullscreen}
+
+# increase brightness
+super + equal
+    /home/gero/Scripts/increase_brightness.sh
+
+# decrese brightness
+super + minus
+   /home/gero/Scripts/decrease_brightness.sh
