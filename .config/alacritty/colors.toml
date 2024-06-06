@@ -22,7 +22,6 @@ cyan = "#F6C457"
 white = "#efdaaf"
 
 [colors.primary]
-# background = "#0E0E18"
 background = "#101010"
 foreground = "#ffffff"
 

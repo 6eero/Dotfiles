@@ -7,7 +7,7 @@ super + Return
 #	bspc node -{c,k}
 
 super + q
-  ./Scripts/rofi-kill-window.sh
+  $HOME/Dotfiles/Scripts/rofi-kill-window.sh
 
 # refresh bspwm config
 super + w
@@ -39,8 +39,8 @@ super + {t,f}
 
 # increase brightness
 super + equal
-    /home/gero/Scripts/increase_brightness.sh
+   $HOME/Dotfiles/Scripts/increase_brightness.sh
 
 # decrese brightness
 super + minus
-   /home/gero/Scripts/decrease_brightness.sh
+   $HOME/Dotfiles/Scripts/decrease_brightness.sh
