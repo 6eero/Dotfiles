@@ -2,7 +2,7 @@
     bg:             #101010;
     fg:             #505050;
     selected:       #ffffff;
-    button:         #151515;
+    button:         #171717;
 
     background-color: @bg;
     text-color: @fg;
@@ -13,8 +13,10 @@ window {
     border-radius: 0px;
     width: 150px;
     y-offset: 10px;
-    padding: 0px;
+    padding: 10px;
     location: 0;
+    border: 1px;
+    border-color: @fg;
 }
 
 prompt { enabled: false; }
@@ -35,21 +37,22 @@ mainbox {
 
 element {
     orientation: vertical;
-    border-radius: 0%;
     padding: 1% 0% 1% 0%;
+    margin: 1% 0;
 }
 
 element-text {
     expand: true;
     vertical-align: 0.5;
-    horizontal-align: 0.5; /* Aggiunta per centrare il testo orizzontalmente */
+    horizontal-align: 0.5;
     margin: 0% 0% 0% 0%;
     background-color: inherit;
     text-color: inherit;
+    text-align: center;
 }
 
 element selected {
-    background-color: @bg;
+    background-color: @button;
     text-color: @selected;
     border-radius: 0px;
 }
