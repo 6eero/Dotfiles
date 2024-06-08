@@ -28,6 +28,7 @@
 # 📷 Screenshots 
 ![](https://github.com/6eero/Dotfiles/blob/main/Screenshots/3.png)
 ![](https://github.com/6eero/Dotfiles/blob/main/Screenshots/2.png)
+![](https://github.com/6eero/Dotfiles/blob/main/Screenshots/4.png)
 
 # ⛏️ Manual Installation
 1. Clone this repository.
