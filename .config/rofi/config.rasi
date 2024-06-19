@@ -24,6 +24,8 @@ window {
 	y-offset: 10px;
 	padding: 20px;
 	location: 0;
+	border: 8px;
+    border-color: @button;
 }
 
 prompt { enabled: false; }

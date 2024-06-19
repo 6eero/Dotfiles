@@ -11,7 +11,7 @@
 window {
     transparency: "real";
     border-radius: 0px;
-    width: 200px;
+    width: 180px;
     y-offset: 10px;
     padding: 10px;
     location: 0;
@@ -23,7 +23,7 @@ prompt { enabled: false; }
 
 listview {
     columns: 1;
-    lines: 3;
+    lines: 2;
     cycle: true;
     dynamic: true;
     layout: vertical;
