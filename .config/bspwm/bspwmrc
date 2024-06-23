@@ -8,7 +8,8 @@ xrandr --output HDMI-0 --rotate left
 xrandr --output HDMI-0 --left-of HDMI-1
 
 # Start nitrogen to set the wallpaper on the boot
-nitrogen --restore
+#nitrogen --restore
+feh --bg-scale $HOME/Dotfiles/forest.jpg
 
 # start notification manager
 dunst &
