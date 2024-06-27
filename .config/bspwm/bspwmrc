@@ -16,7 +16,7 @@ dunst &
 
 # kill running istances and start handle wheel
 pkill -f handle-wheel.sh
-$HOME/Dotfiles/Scripts/handle-wheel.sh &
+#$HOME/Dotfiles/Scripts/handle-wheel.sh &
 
 # launch polybar
 ./.config/polybar/launch.sh
