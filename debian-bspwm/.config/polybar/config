@@ -1,0 +1,264 @@
+#-------------------------------------#
+#                                     #
+#               colors                #
+#                                     #
+#-------------------------------------#
+
+[colors]
+    background	    = #101010
+    accent0         = #ffffff
+    accent1         = #393b3d
+    accent2         = #665c54
+    accent3         = #282828
+    accent4         = #ffafff
+
+#-------------------------------------#
+#                                     #
+#               SETTINGS              #
+#                                     #
+#-------------------------------------#
+
+[bar/bar1]
+    ;monitor = ${env:MONITOR:HDMI-1}
+    height = 35
+    fixed_center = true
+    bottom = false
+    separator = 
+    separator-foreground = ${colors.accent1}
+
+    width = 100%
+    offset-x = 0%
+    offset-y = 0%
+
+    background = ${colors.background}
+    foreground = ${colors.accent0}
+
+    ;Distance from left and right
+    padding-left = 2
+    padding-right = 2
+
+    ;Distance between text
+    module-margin-left = 2
+    module-margin-right = 2
+
+    ;Font
+    ;font-0 = JetBrainsMono Nerd Font:style=Regular:size=10;3
+    font-0 = RobotoMono Nerd Font:style=Regular:size=11;3
+    
+
+    ;Behaviour
+    cursor-click = pointer
+    cursor-scroll = ns-resize
+
+    radius-top = 0
+    radius-bottom = 0
+
+    wm-restack = bspwm
+
+
+#-------------------------------------#
+#                                     #
+#               MODULES               #
+#                                     #
+#-------------------------------------#
+
+modules-left   = rofipowermenu xwindow
+modules-center = xworkspaces
+modules-right  = wlan brightness pulseaudio battery time
+
+[module/xworkspaces]
+type = internal/xworkspaces
+pin-workspaces = true
+icon-default= "󰽤"
+format = <label-state>
+format-background = ${colors.background}
+format-foreground = ${colors.accent}
+format-overline = ${colors.background}
+format-underline = ${colors.background}
+label-active = "󰽢"
+label-active-background = ${colors.background}
+label-active-padding = 1
+label-occupied = ""
+label-occupied-padding = 1
+label-urgent = %icon%
+label-urgent-padding = 1
+label-empty = %icon%
+label-empty-padding = 1
+
+[module/brightness]
+    ;type = internal/xbacklight
+    type = internal/backlight
+
+    ; Use the following command to list available cards:
+    ; $ ls -1 /sys/class/backlight/
+    ;card = intel_backlight
+    card = amdgpu_bl0
+
+    ; Available tags:
+    ;   <label> (default)
+    ;   <ramp>
+    ;   <bar>
+    format = <ramp> <label>
+    format-background = ${colors.background}
+    format-foreground = ${colors.accent0}
+    format-overline = ${colors.background}
+    format-underline = ${colors.background}
+    format-padding = 0
+
+    ; Available tokens:
+    ;   %percentage% (default)
+    label = " %percentage%%"
+
+    ; Only applies if <ramp> is used
+    ramp-0 = 󰃞
+    ramp-1 = 󰃞
+    ramp-2 = 󰃟
+    ramp-3 = 󰃟
+    ramp-4 = 󰃠
+
+    enable-scroll = false
+
+[module/wlan]
+    type = internal/network
+    interface = wlo1
+    interval = 3.0
+
+    format-connected = <ramp-signal> <label-connected>
+    format-connected-foreground = ${colors.accent0}
+    label-connected =" %essid%"
+
+    format-disconnected = <label-disconnected>
+    format-disconnected-foreground = ${colors.accent0}
+    label-disconnected = 󰤭
+    label-disconnected-foreground = ${colors.accent0}
+
+    ramp-signal-0 = 󰤯
+    ramp-signal-1 = 󰤟
+    ramp-signal-2 = 󰤢
+    ramp-signal-3 = 󰤥
+    ramp-signal-4 = 󰤨
+    ramp-signal-foreground = ${colors.foreground-alt}
+    format-background = ${colors.background}
+    format-padding = 4
+
+[module/xwindow]
+    type = internal/xwindow
+    label = %title:0:30:...%
+
+[module/bspwm]
+    type = internal/bspwm
+
+    label-focused = %name%
+    label-focused-background = ${colors.background}
+    label-focused-foreground = #ffffff
+    label-focused-padding = 1
+
+    label-occupied = %name%
+    label-occupied-padding = 1
+    label-occupied-foreground = #303030
+
+    label-empty = %name%
+    label-empty-foreground = #303030
+    label-empty-padding = 1
+
+[module/time]
+    type = internal/date
+
+    ; Update interval
+    interval = 1.0
+
+    ; Format
+    time = %H:%M
+
+    ; Label
+    label            =   %time%
+    label-foreground = ${colors.accent0}
+    label-padding    = 0
+
+[module/date]
+    type = internal/date
+
+    ; Update interval
+    interval = 1.0
+
+    ; Format
+    date = %d %B
+
+    ; Label
+    label            = %date%
+    label-foreground = ${colors.accent0}
+    label-padding    = 0
+
+
+[module/pulseaudio]
+    type = internal/pulseaudio
+
+    format-volume = <label-volume>
+    label-volume =   %percentage%%
+    
+
+    label-muted =  Muted
+    label-muted-foreground = ${colors.accent0}
+
+    bar-volume-width = 10
+    
+    bar-volume-gradient = false
+    bar-volume-indicator = |
+    bar-volume-indicator-font = 2
+    bar-volume-fill = ─
+    bar-volume-fill-font = 2
+    bar-volume-empty = ─
+    bar-volume-empty-font = 2
+    bar-volume-empty-foreground = ${colors.accent0}
+
+[module/battery]
+    type = internal/battery
+    battery = BAT0
+    adapter = AC
+    full-at = 98
+    label = %battery%
+    format-prefix = BAT
+    format-charging = <label-charging>
+    format-discharging = <ramp-capacity> <label-discharging>
+
+    label-charging = " %percentage%%"
+    label-discharging = " %percentage%%" 
+    ramp-capacity-0 = 
+    ramp-capacity-1 = 
+    ramp-capacity-2 = 
+    ramp-capacity-3 = 
+    ramp-capacity-4 = 
+
+   format-charging-background = ${colors.backgound}
+   format-discharging-background = ${colors.background}
+   format-charging-padding = 0
+   format-discharging-padding = 0
+   format-charging-foreground = ${colors.accent0}
+   format-discharging-foreground = ${colors.accent0}
+   ramp-foreground = ${colors.accent0}
+
+[module/rofipowermenu]
+   type = custom/text
+   content = " "
+   click-left = $HOME/Dotfiles/debian-bspwm/Scripts/rofi-power-menu.sh &
+
+
+#-------------------------------------#
+#                                     #
+#                OTHER                #
+#                                     #
+#-------------------------------------#
+
+[settings]
+    screenchange-reload = true
+    ;compositing-background = xor
+    ;compositing-background = screen
+    ;compositing-foreground = source
+    ;compositing-border = over
+    ;pseudo-transparency = false
+
+[global/wm]
+    margin-top = 5
+    margin-bottom = 5
+
+    ; vim:ft=dosini

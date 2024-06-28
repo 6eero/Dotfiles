@@ -1,0 +1,13 @@
+set adjust-open "best-fit"
+
+set guioptions v
+set selection-clipboard clipboard
+
+set recolor   
+set recolor-lightcolor \#0b0e14
+set recolor-keephue
+set default-bg \#0b0e14
+
+map p navigate previous
+map m navigate next
+map i recolor

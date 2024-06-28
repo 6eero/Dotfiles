@@ -31,12 +31,29 @@
 ![](https://github.com/6eero/Dotfiles/blob/main/Screenshots/4.png)
 
 # ⛏️ Manual Installation
-1. Clone this repository.
-```
-git clone https://github.com/6eero/dotfiles
-```
 
-2. Copy the piece of code you really want.
+Follow these steps to set up configuration files:
+
+1. **Clone the repository to your home directory:**
+   ```bash
+   git clone https://github.com/6eero/Dotfiles.git
+   ```
+
+2. **Navigate to the folder containing the configurations:**
+   ```bash
+   cd $HOME/.config
+   ```
+
+3. **Create symbolic links for the files found in `$HOME/Dotfiles/{your choice}/`, for example:**
+   ```bash
+   ln -s $HOME/dotfile/.config/alacritty
+   ln -s $HOME/dotfile/.config/bspwm
+   ln -s $HOME/dotfile/.config/sxhkd
+   ...
+   ```
+
+That's it! You've now set up your configuration files.
+
 
 # ⚠️Note
 Please understand that this is my personal configuration for my setup. If something doesn't work, feel free to message me, and I will try to help. However, before doing that, make sure you read the error output, use some common sense, and try to solve the problem yourself if it is something simple.

@@ -1,0 +1,64 @@
+# terminal emulator
+super + Return
+	alacritty
+
+# close focused window
+#super + q
+#	bspc node -{c,k}
+
+super + q
+	$HOME/Dotfiles/debian-bspwm/Scripts/rofi-kill-window.sh
+
+# refresh bspwm config
+super + w
+	$HOME/Dotfiles/debian-bspwm/.config/bspwm/bspwmrc
+
+# refresh sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# take a screenshot
+Print
+	flameshot gui
+
+# program launcher
+super + d
+	rofi -modi drun -show
+
+# start ranger file manager
+super + r
+	alacritty -e ranger
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# alternate between the tiled and monocle layout (full screen)
+#super + f
+#	bspc desktop -l next
+
+super + {t,f}
+	bspc node -t {tiled,fullscreen}
+
+# log out
+super + l
+	bspc quit
+
+#Volume Control
+XF86AudioLowerVolume
+	pactl -- set-sink-volume 0 -10%
+XF86AudioRaiseVolume
+	pactl -- set-sink-volume 0 +10%
+XF86AudioMute
+        pactl -- set-sink-volume 0 0%
+
+# Brightness control
+XF86MonBrightness{Up,Down}  
+  brightnessctl s 10{+,-}
+
+# expand/contract a window 
+super + {Left,Down,Up,Right}
+  bspc node -z {left -20 0 || bspc node -z right -20 0, \
+                bottom 0 20 || bspc node -z top 0 20,\
+                top 0 -20 || bspc node -z bottom 0 -20,\
+                right 20 0 || bspc node -z left 20 0}

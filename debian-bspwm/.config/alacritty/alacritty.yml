@@ -1,0 +1,67 @@
+window:
+  padding:
+    x: 20
+    y: 20
+
+  class:
+    istance: Alacritty
+    general: Alacritty
+
+scrolling:
+  history: 10000
+  multiplier: 4
+
+
+font:
+  normal:
+    family: JetBrains Mono Nerd Font
+    style:  Medium
+  bold:
+    family: JetBrains Mono Nerd Font
+    style:  Bold
+  italic:
+    family: JetBrains Mono Nerd Font
+    style:  MediumItalic
+  bold_italic:
+    family: JetBrains Mono Nerd Font
+    style: BoldItalic
+  size: 8
+
+draw_bold_text_with_bright_colors: false
+
+# Vesper like
+colors:
+    
+  # Default colors
+  primary:
+    background: '0x101010'
+    foreground: '0xffffff'
+    
+  # Normal colors
+  normal:
+    black:   '0x1d2430'
+    red:     '0xfa5ead'
+    green:   '0x00fbad'
+    yellow:  '0xf55385'
+    blue:    '0xffc799'
+    magenta: '0x7292ee'
+    cyan:    '0xffc799'
+    white:   '0xffffff'
+
+  # Bright colors
+  bright:
+    black:   '0x1d2430'
+    red:     '0x7292ee'
+    green:   '0x00fbad'
+    yellow:  '0xffdf5f'
+    blue:    '0xffc799'
+    magenta: '0x7292ee'
+    cyan:    '0xffc799'
+    white:   '0xefffff'
+
+
+cursor:
+  style:
+    shape: Underline
+    blinking: off
+    blink-interval: 750
