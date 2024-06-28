@@ -1,6 +1,6 @@
 # terminal emulator
 super + Return
-	alacritty
+	alacritty --working-directory $HOME
 
 # close focused window
 #super + q
