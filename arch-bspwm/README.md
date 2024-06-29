@@ -10,7 +10,7 @@
 - Code Editor - [VSCodium](https://vscodium.com/)
 
 # 📷 Screenshots 
-![](https://github.com/6eero/Dotfiles/blob/main/arch-bspwm/Screenshots/1.png)
+![](https://github.com/6eero/Dotfiles/blob/main/arch-bspwm/Screenshots/1.jpg)
 ![](https://github.com/6eero/Dotfiles/blob/main/arch-bspwm/Screenshots/2.png)
 ![](https://github.com/6eero/Dotfiles/blob/main/arch-bspwm/Screenshots/3.png)
 ![](https://github.com/6eero/Dotfiles/blob/main/arch-bspwm/Screenshots/4.png)
