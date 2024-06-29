@@ -7,11 +7,11 @@ super + Return
 #	bspc node -{c,k}
 
 super + q
-  $HOME/Dotfiles/Scripts/rofi-kill-window.sh
+  $HOME/Dotfiles/arch-bspwm/Scripts/rofi-kill-window.sh
 
 # refresh bspwm config
 super + w
-	./.config/bspwm/bspwmrc
+	$HOME/Dotfiles/arch-bspwm/.config/bspwm/bspwmrc
 
 # refresh sxhkd
 super + Escape
@@ -39,8 +39,8 @@ super + {t,f}
 
 # increase brightness
 super + equal
-   $HOME/Dotfiles/Scripts/increase_brightness.sh
+   $HOME/Dotfiles/arch-bspwm/Scripts/increase_brightness.sh
 
 # decrese brightness
 super + minus
-   $HOME/Dotfiles/Scripts/decrease_brightness.sh
+   $HOME/Dotfiles/arch-bspwm/Scripts/decrease_brightness.sh

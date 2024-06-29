@@ -1,4 +1,4 @@
-import = [ "~/.config/alacritty/colors.toml" ]
+import = [ "$HOME/Dotfiles/arch-bspwm/.config/alacritty/colors.toml" ]
 
 [window.padding]
 x = 20

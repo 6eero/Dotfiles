@@ -2,7 +2,7 @@
 
 # Power menu script using tofi
 
-CHOSEN=$(printf "  Shutdown\n  Reboot\n  Log Out" | rofi -dmenu -i -theme /home/gero/Dotfiles/.config/rofi/powermenu-theme.rasi)
+CHOSEN=$(printf "  Shutdown\n  Reboot\n  Log Out" | rofi -dmenu -i -theme $HOME/Dotfiles/arch-bspwm/.config/rofi/powermenu-theme.rasi)
 
 case "$CHOSEN" in
 	"  Shutdown") systemctl poweroff ;;

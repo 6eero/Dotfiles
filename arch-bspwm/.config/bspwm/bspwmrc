@@ -15,11 +15,11 @@ nitrogen --restore
 dunst &
 
 # kill running istances and start handle wheel
-pkill -f handle-wheel.sh
+#pkill -f handle-wheel.sh
 #$HOME/Dotfiles/Scripts/handle-wheel.sh &
 
 # launch polybar
-./.config/polybar/launch.sh
+$HOME/Dotfiles/arch-bspwm/.config/polybar/launch.sh
 
 # Workspaces
 bspc monitor HDMI-1 -d '1' '2' '3' '4' '5' '6' '7' 
