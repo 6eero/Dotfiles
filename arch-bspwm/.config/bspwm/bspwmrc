@@ -14,6 +14,10 @@ nitrogen --restore
 # start notification manager
 dunst &
 
+# Disabilita lo screensaver e la gestione dell'alimentazione del display
+xset s off
+xset -dpms
+
 # kill running istances and start handle wheel
 #pkill -f handle-wheel.sh
 #$HOME/Dotfiles/Scripts/handle-wheel.sh &
