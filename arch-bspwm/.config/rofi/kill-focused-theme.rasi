@@ -1,8 +1,8 @@
 * {
-    bg:             #101010;
+    bg:             #0b0e14;
     fg:             #505050;
     selected:       #ffffff;
-    button:         #171717;
+    button:         #11151c;
 
     background-color: @bg;
     text-color: @fg;

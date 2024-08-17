@@ -41,5 +41,5 @@ cyan = "#F6C457"
 white = "#efdaaf"
 
 [colors.primary]
-background = "#101010"
+background = "#0b0e14"
 foreground = "#ffffff"
